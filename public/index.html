@@ -21,6 +21,16 @@
       console.log("escuchado: ", payload);
     });
 
+    socket.on('nuevo-mensaje', function(payload){
+      console.log("escuchado: ", payload);
+    });
+
+    socket.on('active-bands', function(payload){
+      //console.log("bandas escuchadas: ", payload);
+      console.clear;
+      console.table(payload);
+    });
+
   </script>
 </body>
 </html>
